@@ -1,0 +1,9 @@
+.card img {
+    height: 200px;
+    object-fit: cover;
+    
+  }
+  .tech-icon {
+    width: 25px;
+    margin-right: 5px;
+  }

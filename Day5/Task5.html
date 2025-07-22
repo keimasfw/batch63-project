@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Form</title>
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- myCSS -->
+   <link rel="stylesheet" href="assets/css/card.css">
+</head>
+<body class="bg-light" style="background-color: #dbe2ea;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container">
+       <!-- My Logo -->
+       <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold active" href="#">My Project</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-dark rounded-pill px-3">Contact Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Form Input -->
+  <div class="container my-5">
+    <h2 class="text-center fw-bold mb-4">MY PROJECT</h2>
+    <form class="mx-auto" style="max-width: 700px;" action="" id="projectForm">
+      <div class="mb-3">
+        <label for="project-name" class="form-label fw-semibold">Project Name</label>
+        <input type="text" class="form-control shadow-sm" id="project-name" placeholder="Enter your project name">
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="date-start" class="form-label fw-semibold">Start Date</label>
+          <input type="date" class="form-control shadow-sm" id="date-start">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="end-date" class="form-label fw-semibold">End Date</label>
+          <input type="date" class="form-control shadow-sm" id="end-date">
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label for="description" class="form-label fw-semibold">Description</label>
+        <textarea class="form-control shadow-sm" id="description" rows="5" placeholder="Write your description"></textarea>
+      </div>
+
+      <div class="mb-4">
+        <label class="form-label fw-semibold">Technologies</label>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="checkbox" id="tech-node">
+              <label class="form-check-label" for="tech-node">Node Js</label>
+            </div>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="checkbox" id="tech-react">
+              <label class="form-check-label" for="tech-react">React Js</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="checkbox" id="tech-next">
+              <label class="form-check-label" for="tech-next">Next Js</label>
+            </div>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="checkbox" id="tech-typescript">
+              <label class="form-check-label" for="tech-typescript">TypeScript</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label for="upload-files" class="form-label fw-semibold">Upload Image</label>
+        <input type="file" name="upload-files" class="form-control shadow-sm" id="upload-files">
+      </div>
+
+      <div class="text-end mb-4">
+        <button type="submit" class="btn btn-dark px-4 rounded-pill text-capitalize">submit</button>
+      </div>
+
+      <!-- get from value here (Card Object) -->
+      <div class="row" id="result"></div>
+    </form>
+  </div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="Task5.js"></script>
+</body>
+</html>
