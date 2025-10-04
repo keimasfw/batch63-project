@@ -1,5 +1,5 @@
 {
-  "name": "personal-web",
+  "name": "express2",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "bcrypt": "^6.0.0",
     "express": "^5.1.0",
-    "express-flash": "^0.0.2",
-    "express-session": "^1.18.2",
-    "hbs": "^4.2.0",
-    "pg": "^8.16.3"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
+    "hbs": "^4.2.0"
   }
 }
