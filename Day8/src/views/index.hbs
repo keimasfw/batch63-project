@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+    <nav>
+        <a href="/login">login</a>
+        <a href="/register">register</a>
+    </nav>
+
+    {{#if userData}}
+      <h1>Hello {{userData.name}} </h1>
+      <h1>Hello {{userData.email}} </h1>
+    {{/if}}
+
+    <p>This Homepage</p>
+    <a href="/contact">click here</a>
+
+    {{!-- {{#each result.rows}} --}}
+        {{!-- <p>{{this.name}} --}}
+            {{!-- <a href="/portofolio/{{this.id}} ">click here</a></p> --}}
+    {{!-- {{/each}} --}}
+
+    {{!-- for (let i=0; i<data.length; i++){
+        data[i].id
+        data[i].title
+    } --}}
+
+<script src="../assets/js/index.js"></script>
+    
+</body>
+</html>
